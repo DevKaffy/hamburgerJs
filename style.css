@@ -1,0 +1,47 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: aquamarine;
+}
+* {
+  box-sizing: border-box;
+}
+.hamburger img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.hamburger {
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  /* padding: 4px; */
+  cursor: pointer;
+}
+.close-icon {
+  display: none;
+}
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background: red;
+  margin-top: 0;
+  /* color: white; */
+  list-style: none;
+  padding-top: 1rem;
+}
+.show-menu {
+  transform: translateY(0);
+}
